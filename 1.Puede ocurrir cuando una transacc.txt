@@ -181,7 +181,7 @@ c. information_schema
 d. sys
 ChatGPT
 La respuesta correcta es:
-c. information_schema
+c. sys
 
 21.El esquema "information_schema" en SQL Server (y otros sistemas de gestión de bases de datos) contiene vistas que proporcionan información sobre los objetos de la base de datos, como tablas, columnas, restricciones, rutinas almacenadas, privilegios, etc. Permite consultar los metadatos de la base de datos de una manera estandarizada y consistente entre diferentes sistemas de gestión de bases de datos. Es una parte importante para obtener información sobre la estructura de la base de datos.
 
