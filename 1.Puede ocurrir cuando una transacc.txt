@@ -1,0 +1,219 @@
+1.Puede ocurrir cuando una transacción modifica los datos, una segunda transacción ve esas modificaciones antes de que sean realmente completadas en la base de datos, y después la primera transacción retira las modificaciones, regresando a la base de datos a su estado original. Sin embargo, la segunda transacción, habiendo leído los datos modificados, pudo haber tomado alguna acción basada en los datos incorrectos.
+
+Respuesta 1: Anomalía de lectura sucia
+
+2.Rol que permite crear, modificar, eliminar y restaurar cualquier base de datos	
+
+Respuesta 2: Rol de servidor
+
+3.Puede ocurrir cuando una transacción lee una tabla basada en algún tipo de condición de búsqueda, después una segunda transacción actualiza los datos en la tabla, y la primera transacción intenta volver a leer los datos, sólo que esta vez se arrojan diferentes filas debido a como está definida la condición de búsqueda.	
+
+Respuesta 3: Anomalía de lectura no repetible
+
+4.Puede cambiar las opciones de configuración del servidor y apagarlo	
+Respuesta 4: ServerAdmin
+
+5.Puede realizar cualquier actividad en el servidor	
+Respuesta 5: Rol de servidor Sysadmin
+
+6.puede ocurrir cuando una transacción lee datos desde una tabla, luego otra transacción actualiza la tabla, y la primera transacción vuelve a leer los datos, sólo para descubrir que los datos han sido cambiados	
+Respuesta 6: Anomalía de lectura fantasma
+
+7.Está disponible para todos los usuarios , se establece de forma predeterminada
+Respuesta 7: Rol público
+
+8.Administran los inicios de sesión y sus propiedades ,así como administran permisos del servidor y a nivel base de datos	
+Respuesta 8: SecurityAdmin
+
+
+9.Es esta bitácora de transacciones se guardan en archivos. con extensión .LDF para poder recuperarlos si fuese necesario
+Seleccione una:
+a. Archivos de LOG
+b. Archivos de DATOS
+c. Memoria buffer
+d. Ninguna de las anteriores
+ChatGPT
+a. Archivos de LOG
+
+10.Los archivos de registro de transacciones (LOG) con extensión .LDF son utilizados para almacenar las operaciones de transacciones que se realizan en una base de datos en SQL Server. Estos archivos son esenciales para garantizar la integridad de la base de datos y permiten la recuperación ante desastres. El registro de transacciones mantiene un registro secuencial de todas las transacciones que se han llevado a cabo en la base de datos, lo que permite revertir o recuperar cambios en caso de fallas o errores.
+
+
+
+
+User
+11.Son considerados como Propietario, no puede ser borrado de la base de datos.
+Seleccione una:
+a. guest
+b. information_schema
+c. dbo
+d. sys
+ChatGPT
+c.dbo
+
+
+
+User
+12.Proceso que se refiere a la copia y archivo de datos de modo que se puede utilizar para restaurar la información original después de una eventual pérdida de datos.
+Seleccione una:
+a. back up
+b. guardado
+c. Copia de seguridad
+d. Ninguna de las anteriores
+ChatGPT
+La respuesta correcta es:
+a. Copia de seguridad
+
+User
+13.Son autenticados contra SQL Server por lo tanto son los accesos al servidor,.
+Seleccione una:
+a. guest
+b. User
+c. Login
+d. dbo
+ChatGPT
+La respuesta correcta es:
+c. Login
+
+
+
+
+
+
+
+
+
+User
+14.Instrucción que se utiliza para conceder determinados permisos genéricos o bien permisos sobre objetos a usuarios de la base de datos
+Seleccione una:
+a. Grant
+b. revoke
+c. grant option
+d. information_schema
+ChatGPT
+La respuesta correcta es:
+a. Grant
+
+User
+15.Instrucción que se utiliza para conceder determinados permisos genéricos o bien permisos sobre objetos a usuarios de la base de datos
+Seleccione una:
+a. Grant
+b. revoke
+c. grant option
+d. information_schema
+ChatGPT
+La respuesta correcta es:
+a. Grant
+
+
+
+
+
+
+
+
+
+User
+16.Se compone de una clave privada y su correspondiente clave pública.
+Seleccione una:
+a. Cifrado de datos transparente
+b. Certificado
+c. Claves asimétricas
+d. Claves simétricas
+ChatGPT
+La respuesta correcta es:
+c. Claves asimétricas
+
+User
+17.Realiza un backup de los archivos originales, objetos y datos también realiza una porción de transacciones
+Seleccione una:
+a. Ninguna de las anteriores
+b. Transaction Log back up
+c. Full data base back up
+d. Differential back up
+ChatGPT
+La respuesta correcta es:
+c. Full database backup
+
+
+
+
+
+
+
+
+
+User
+18.Es un método para identificar un inicio de sesión con credenciales suministradas por el sistema operativo Windows del equipo que realiza la conexión.
+Seleccione una:
+a. autenfificacion
+b. inicio de sesión
+c. autentificación de Sql server
+d. autentificación de Windows
+ChatGPT
+La respuesta correcta es:
+d. autentificación de Windows
+
+User
+19.Es un método para identificar un inicio de sesión con credenciales suministradas por el sistema operativo Windows del equipo que realiza la conexión.
+Seleccione una:
+a. autenfificacion
+b. inicio de sesión
+c. autentificación de Sql server
+d. autentificación de Windows
+ChatGPT
+La respuesta correcta es:
+d. autentificación de Windows
+
+
+
+
+
+
+
+
+
+User
+20.Permite consultar las tablas y vistas del sistema, procedimientos extendidos y otros objetos del catálogo del sistema
+Seleccione una:
+a. dbo
+b. guest
+c. information_schema
+d. sys
+ChatGPT
+La respuesta correcta es:
+c. information_schema
+
+21.El esquema "information_schema" en SQL Server (y otros sistemas de gestión de bases de datos) contiene vistas que proporcionan información sobre los objetos de la base de datos, como tablas, columnas, restricciones, rutinas almacenadas, privilegios, etc. Permite consultar los metadatos de la base de datos de una manera estandarizada y consistente entre diferentes sistemas de gestión de bases de datos. Es una parte importante para obtener información sobre la estructura de la base de datos.
+
+User
+22.Colección de objetos de la base de datos cuyo propietario es un único principal y forma un único espacio de nombres (conjunto de objetos que no pueden tener nombres duplicados)
+Seleccione una:
+a. logn
+b. esquema
+c. information_schema
+d. usuarios
+ChatGPT
+La respuesta correcta es:
+
+b. esquema
+
+User
+23.Permite a usuarios que no tienen cuenta en la Base de Datos, que accedan a ella, pero hay que hacerle permiso explícitamente
+Seleccione una:
+a. sys
+b. dbo
+c. information_schema
+d. guest
+ChatGPT
+La respuesta correcta es:
+
+d. guest
+
+User
+24.Es la identidad del inicio de sesión cuando está conectado a una base de datos
+Seleccione una:
+a. User
+b. guest
+c. dbo
+d. Login
+Respuesta: User
